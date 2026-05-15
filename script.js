@@ -1,209 +1,331 @@
-// // javaScript
-
-// // scripting language
-
-// // 1. kjbhcjdbjksbkjbjchsbjkcbjhsdbjcbjsh
-// // 2. jbhjsbdjhbchjsdbvhjbfsdvhbkdjvhbv
-// // 3. jhshfhbsbhhufbsui
-
-
-// // variables 
-
-// // var  - global scope & function scope
-
-// // let  - block scope
-
-// // const - block scope
-
-
-// // rules : - 
-
-// // var rules 
-
-
-// var a = 20                // declration   // intialiazation
-
-//     a = 25               // reuse        // reinitialization
-
-// var a = 30                // reDeclration
-
-// console.log(a)
-
-
-// // let rules 
-
-// let b = 40
-
-//     b = 45
-
-// // let b = 50        // not accept redeclration
-
-// console.log(b);
-
-// // const rules - constant
-
-
-// const c = 60
-
-//     //   c = 65    not reuse , reintialization 
-
-// // const c = 70    not accept redeclration
-
-// console.log(c);
+// ======================================
+// JavaScript Tasks - 50 Questions
+// Topic : Variables + Printing Statements
+// ======================================
 
 
 
-// Examples :- 
+// 1. Create a variable using var and store your name.
+
+var name = "Magesh"
 
 
-// 1. What is the output of the below code ?
+// 2. Print your name using console.log().
+
+console.log(name)
+
+
+// 3. Create a variable using let and store your age.
+
+let age = 21
+
+
+// 4. Change the value of age and print it.
+
+age = 22
+console.log(age)
+
+
+// 5. Create a constant variable for country name.
+
+const country = "India"
+
+
+// 6. Print the country name.
+
+console.log(country)
+
+
+// 7. Try redeclaring var variable and observe output.
+
+var city = "Chennai"
+var city = "Madurai"
+
+console.log(city)
+
+
+// 8. Try redeclaring let variable and observe error.
+
+// let place = "Delhi"
+// let place = "Mumbai"
+
+// Error: Identifier 'place' has already been declared
+
+
+// 9. Try reassigning const variable and observe error.
+
+// const pi = 3.14
+// pi = 3.14159
+
+// Error: Assignment to constant variable
+
+
+// 10. Write difference between var and let.
+
+// var allows redeclaration.
+// let does not allow redeclaration.
+
+
+// 11. Write difference between let and const.
+
+// let allows reassignment.
+// const does not allow reassignment.
+
+
+// 12. Predict output
 
 var a = 10
-a = 15
-var a = 20
+a = 20
+var a = 30
 
-console.log(a) // 20
+console.log(a)
 
+// Output: 30
 
-// 2. Which keyword allows redeclaration ?
 
-// var
+// 13. Predict output
 
+let b = 50
+b = 60
 
-// 3. Which keyword is used for constant values ?
+console.log(b)
 
-// constant
+// Output: 60
 
 
-// 4. Find the error in the below code
+// 14. Predict output
 
-let b = 30
-// let b = 40
+const c = 100
 
-console.log(b) // syntex error
+console.log(c)
 
+// Output: 100
 
-// 5. What is reinitialization ? 
 
-//  
+// 15. Use console.log() to print "Hello World".
 
+console.log("Hello World")
 
-// 6. What is the difference between var and let ?
 
+// 16. Use alert() to show "Welcome User".
 
-// 7. What is the output ?
+alert("Welcome User")
 
-const c = 50
 
-console.log(c) // 50
+// 17. Use confirm() to ask user:
+// "Do you like JavaScript?"
 
+confirm("Do you like JavaScript?")
 
-// 8. Can we reassign value to const ? 
 
-// 
+// 18. Use prompt() to ask user name.
 
+prompt("Enter your name")
 
-// 9. Which keyword does not allow redeclaration but allows reinitialization ?
 
+// 19. Print prompt value in console.
 
-// 10. Write one example for:
-// a) var
+let userName = prompt("Enter your name")
+console.log(userName)
 
-var a1 = 15
 
-    a1 = 20
+// 20. Use document.writeln() to print "Batch 33".
 
-var a1 = 27
+document.writeln("Batch 33")
 
-console.log(a1);
 
+// 21. Create variable studentName and store your name.
 
-// b) let 
+let studentName = "Magesh"
 
-let a2 = 20
 
-    a2 = 25
+// 22. Create variable studentAge and store your age.
 
-// let a2 
+let studentAge = 21
 
-console.log(a2);
 
+// 23. Print both variables together.
 
+console.log(studentName, studentAge)
 
-// c) const 
 
-const a3 = 27
+// 24. Create a variable for mobile number.
 
-    //   a3 = 50
+let mobileNumber = 9876543210
 
-// const a3 
 
-console.log(a3);
+// 25. Print mobile number using console.log().
 
+console.log(mobileNumber)
 
 
+// 26. Create variable using var for favorite color.
 
-// printing Statement 
+var favoriteColor = "Blue"
 
 
-// 1. console.log()
+// 27. Reassign another color value.
 
-console.log(100);
+favoriteColor = "Black"
+console.log(favoriteColor)
 
-let a5 = 123
 
-console.log(a5);
+// 28. Create variable using let for marks.
 
+let marks = 80
 
 
-// 2. alert()
+// 29. Change marks value and print it.
 
-// alert(100)
+marks = 95
+console.log(marks)
 
-// let a6 = 1234
 
-// alert(a6)
+// 30. Create const variable for PI value.
 
-// 3. confirm()
+const PI = 3.14
 
-// confirm("did you like program")
 
-// 4. prompt()
+// 31. Print PI value.
 
-// prompt("what is your name")
+console.log(PI)
 
-// 5. document.writeln()
 
-// document.writeln("sdhbjshbjcsd")
+// 32. Predict output
 
+var x = 5
+var x = 15
 
-// example :- 
+console.log(x)
 
-// 1. i want to print value "hello" in console side
+// Output: 15
 
-console.log("hello");
 
+// 33. Predict output
 
-// 2. i want to show "hello" to user the way is pop up
+let y = 25
+y = 35
 
-// alert("hello")
+console.log(y)
 
-// 3. i want to print user age to console side
+// Output: 35
 
-// let userAge = prompt("enter your age")
 
-// console.log(userAge);
+// 34. Find error
 
+const z = 40
+// z = 45
 
-// 4. i want to know user is complete html and css
+console.log(z)
 
-// let userCompletion = confirm("did you complete html,css")
+// Error: const variable cannot be reassigned
 
-// console.log(userCompletion);
 
+// 35. Create alert box with your college name.
 
+alert("AVC College")
 
-// 5. i want to print in ui "batch 33"
 
-document.writeln("batch 33")
+// 36. Ask user age using prompt().
 
+prompt("Enter your age")
+
+
+// 37. Print user age in console.
+
+let userAge = prompt("Enter your age")
+console.log(userAge)
+
+
+// 38. Ask user confirmation:
+// "Did you complete HTML?"
+
+confirm("Did you complete HTML?")
+
+
+// 39. Print confirm result in console.
+
+let result = confirm("Did you complete HTML?")
+console.log(result)
+
+
+// 40. Print "JavaScript Class" using document.writeln().
+
+document.writeln("JavaScript Class")
+
+
+// 41. Create 3 variables:
+// city, state, country.
+
+let cityName = "Chennai"
+let state = "Tamil Nadu"
+let countryName = "India"
+
+
+// 42. Print all variables together.
+
+console.log(cityName, state, countryName)
+
+
+// 43. Create one example for var.
+
+var course = "JavaScript"
+
+
+// 44. Create one example for let.
+
+let salary = 25000
+
+
+// 45. Create one example for const.
+
+const company = "Google"
+
+
+// 46. Predict output
+
+var num = 100
+num = 200
+
+console.log(num)
+
+// Output: 200
+
+
+// 47. Predict output
+
+let price = 500
+price = 700
+
+console.log(price)
+
+// Output: 700
+
+
+// 48. Predict output
+
+const password = 12345
+
+console.log(password)
+
+// Output: 12345
+
+
+// 49. Write rules of var.
+
+// 1. var allows redeclaration
+// 2. var allows reassignment
+// 3. var is function scoped
+
+
+// 50. Write rules of let and const.
+
+// let:
+// 1. let does not allow redeclaration
+// 2. let allows reassignment
+// 3. let is block scoped
+
+// const:
+// 1. const does not allow redeclaration
+// 2. const does not allow reassignment
+// 3. const is block scoped
