@@ -1,563 +1,839 @@
-// // // javaScript
+// // // // javaScript
 
-// // // scripting language
+// // // // scripting language
 
-// // // 1. kjbhcjdbjksbkjbjchsbjkcbjhsdbjcbjsh
-// // // 2. jbhjsbdjhbchjsdbvhjbfsdvhbkdjvhbv
-// // // 3. jhshfhbsbhhufbsui
+// // // // 1. kjbhcjdbjksbkjbjchsbjkcbjhsdbjcbjsh
+// // // // 2. jbhjsbdjhbchjsdbvhjbfsdvhbkdjvhbv
+// // // // 3. jhshfhbsbhhufbsui
 
+// // // // variables
 
-// // // variables 
+// // // // var  - global scope & function scope
 
-// // // var  - global scope & function scope
+// // // // let  - block scope
 
-// // // let  - block scope
+// // // // const - block scope
 
-// // // const - block scope
+// // // // rules : -
 
+// // // // var rules
 
-// // // rules : - 
+// // // var a = 20                // declration   // intialiazation
 
-// // // var rules 
+// // //     a = 25               // reuse        // reinitialization
 
+// // // var a = 30                // reDeclration
 
-// // var a = 20                // declration   // intialiazation
+// // // console.log(a)
 
-// //     a = 25               // reuse        // reinitialization
+// // // // let rules
 
-// // var a = 30                // reDeclration
+// // // let b = 40
 
-// // console.log(a)
+// // //     b = 45
 
+// // // // let b = 50        // not accept redeclration
 
-// // // let rules 
+// // // console.log(b);
 
-// // let b = 40
+// // // // const rules - constant
 
-// //     b = 45
+// // // const c = 60
 
-// // // let b = 50        // not accept redeclration
+// // //     //   c = 65    not reuse , reintialization
 
-// // console.log(b);
+// // // // const c = 70    not accept redeclration
 
-// // // const rules - constant
+// // // console.log(c);
 
+// // // Examples :-
 
-// // const c = 60
+// // // 1. What is the output of the below code ?
 
-// //     //   c = 65    not reuse , reintialization 
+// // var a = 10
+// // a = 15
+// // var a = 20
 
-// // // const c = 70    not accept redeclration
+// // console.log(a) // 20
 
-// // console.log(c);
+// // // 2. Which keyword allows redeclaration ?
 
+// // // var
 
+// // // 3. Which keyword is used for constant values ?
 
-// // Examples :- 
+// // // constant
 
+// // // 4. Find the error in the below code
 
-// // 1. What is the output of the below code ?
+// // let b = 30
+// // // let b = 40
 
-// var a = 10
-// a = 15
-// var a = 20
+// // console.log(b) // syntex error
 
-// console.log(a) // 20
+// // // 5. What is reinitialization ?
 
+// // //
 
-// // 2. Which keyword allows redeclaration ?
+// // // 6. What is the difference between var and let ?
 
-// // var
+// // // 7. What is the output ?
 
+// // const c = 50
 
-// // 3. Which keyword is used for constant values ?
+// // console.log(c) // 50
 
-// // constant
+// // // 8. Can we reassign value to const ?
 
+// // //
 
-// // 4. Find the error in the below code
+// // // 9. Which keyword does not allow redeclaration but allows reinitialization ?
 
-// let b = 30
-// // let b = 40
+// // // 10. Write one example for:
+// // // a) var
 
-// console.log(b) // syntex error
+// // var a1 = 15
 
+// //     a1 = 20
 
-// // 5. What is reinitialization ? 
+// // var a1 = 27
 
-// //  
+// // console.log(a1);
 
+// // // b) let
 
-// // 6. What is the difference between var and let ?
+// // let a2 = 20
 
+// //     a2 = 25
 
-// // 7. What is the output ?
+// // // let a2
 
-// const c = 50
+// // console.log(a2);
 
-// console.log(c) // 50
+// // // c) const
 
+// // const a3 = 27
 
-// // 8. Can we reassign value to const ? 
+// //     //   a3 = 50
 
-// // 
+// // // const a3
 
+// // console.log(a3);
 
-// // 9. Which keyword does not allow redeclaration but allows reinitialization ?
+// // // printing Statement
 
+// // // 1. console.log()
 
-// // 10. Write one example for:
-// // a) var
+// // console.log(100);
 
-// var a1 = 15
+// // let a5 = 123
 
-//     a1 = 20
+// // console.log(a5);
 
-// var a1 = 27
+// // // 2. alert()
 
-// console.log(a1);
+// // // alert(100)
 
+// // // let a6 = 1234
 
-// // b) let 
+// // // alert(a6)
 
-// let a2 = 20
+// // // 3. confirm()
 
-//     a2 = 25
+// // // confirm("did you like program")
 
-// // let a2 
+// // // 4. prompt()
 
-// console.log(a2);
+// // // prompt("what is your name")
 
+// // // 5. document.writeln()
 
+// // // document.writeln("sdhbjshbjcsd")
 
-// // c) const 
+// // // example :-
 
-// const a3 = 27
+// // // 1. i want to print value "hello" in console side
 
-//     //   a3 = 50
+// // console.log("hello");
 
-// // const a3 
+// // // 2. i want to show "hello" to user the way is pop up
 
-// console.log(a3);
+// // // alert("hello")
 
+// // // 3. i want to print user age to console side
 
+// // // let userAge = prompt("enter your age")
 
+// // // console.log(userAge);
 
-// // printing Statement 
+// // // 4. i want to know user is complete html and css
 
+// // // let userCompletion = confirm("did you complete html,css")
+
+// // // console.log(userCompletion);
+
+// // // 5. i want to print in ui "batch 33"
+
+// // document.writeln("batch 33")
+
+// // console method
 
 // // 1. console.log()
 
 // console.log(100);
 
-// let a5 = 123
+// // 2. console.warn()
 
-// console.log(a5);
+// console.warn(100);
 
+// // 3. console.error()
 
+// console.error(100)
 
-// // 2. alert()
+// // 4. console.clear()
 
-// // alert(100)
+// console.clear()
 
-// // let a6 = 1234
+// // Data Types : -
 
-// // alert(a6)
+// // 1. primitive dataTypes
 
-// // 3. confirm()
+// // 1. string  - "hello"
 
-// // confirm("did you like program")
+// let a = "navi"
 
-// // 4. prompt()
+// console.log(typeof(a));
 
-// // prompt("what is your name")
+// // 2. number - 123
 
-// // 5. document.writeln()
+// let b = 123
 
-// // document.writeln("sdhbjshbjcsd")
+// console.log(typeof(b));
 
+// // 3. boolean - true, false
 
-// // example :- 
+// let c = false
 
-// // 1. i want to print value "hello" in console side
+// console.log(typeof(c));
 
-// console.log("hello");
+// // 4. undefined
 
+// let d;
 
-// // 2. i want to show "hello" to user the way is pop up
+// console.log(d);
 
-// // alert("hello")
+// // 5. null
 
-// // 3. i want to print user age to console side
+// // let e = prompt()
 
-// // let userAge = prompt("enter your age")
+// // console.log(e);
 
-// // console.log(userAge);
+// // 2. non primitive dataTypes
 
+// // Array
 
-// // 4. i want to know user is complete html and css
+// // syntex - []
 
-// // let userCompletion = confirm("did you complete html,css")
+// let fruit = ["apple","orange","banana","cherry","giwi","pineApple","jack fruit"]
 
-// // console.log(userCompletion);
+// console.log(fruit);
 
+// console.log(fruit[0]);
+// console.log(fruit[1]);
+// console.log(fruit[2]);
+// console.log(fruit[3]);
 
+// console.log(fruit[fruit.length-1]);
+// console.log(fruit[fruit.length-2]);
 
-// // 5. i want to print in ui "batch 33"
+// // Object
 
-// document.writeln("batch 33")
+// // syntex :- {}
 
+// fruit = ["apple","orange","banana","cherry","giwi","pineApple","jack fruit"]
 
-// console method 
+// let obj = {
+//     redFruit : ["apple","cherry"],
+//     yellowFruit : ["banana","pineApple","jackFruit"],
+//     orangeFruit :"orange"
+// }
 
-// 1. console.log()
+// console.log(obj);
+// console.log(obj.redFruit[0]);
+// console.log(obj.yellowFruit[2]);
+// console.log(obj.orangeFruit);
 
-console.log(100);
+// console.clear();
 
+// // operator
 
-// 2. console.warn()
+// // 1. Arithmrtic operator.
 
-console.warn(100);
+// // Addition   +
 
+// console.log(5 +  6);
 
-// 3. console.error()
+// // subraction +
 
-console.error(100)
+// console.log( 5 - 3);
 
-// 4. console.clear()
+// // multiplication   *
 
-console.clear()
+// console.log(5*2);
 
+// // division  - /
 
+// console.log(5 / 2);
 
+// // modulus    %
 
+// console.log(5 % 2);
 
+// // exponencial  **
 
-// Data Types : - 
+// console.log(4**4);//  -- 4^4 = 4*4*4*4
 
-// 1. primitive dataTypes 
+// // increament   ++  = +1
 
-// 1. string  - "hello"
+// // pre inc  = ++var
 
-let a = "navi"
+// // post inc = var++
 
-console.log(typeof(a));
+// // decreament    --  = -1
 
+// // pre dec  = --var
 
+// // post dec = var--
 
-// 2. number - 123
+// let a1 = 10
 
-let b = 123
+// a1--
 
-console.log(typeof(b));
+// console.log(a1);
 
+// // searching element first find in variable side, you can calculate that value side till the variable.
 
-// 3. boolean - true, false
+// let a2 = 2
 
-let c = false 
+//     a2 = ++a2
 
-console.log(typeof(c));
+//     console.log(a2);
 
+//   // searching element first find in value side, you can calculate that value side entair the variable.
 
-// 4. undefined
+// let a3 = 3
 
-let d;
+// let a4 = a3++
 
-console.log(d);
+// console.log(a3 , a4); // 4 , 3
 
+// // example :-
 
-// 5. null
+// let a5 = 1
 
-// let e = prompt()
+// let a6 = ++a5  // ++1 = 2
 
-// console.log(e);
+// let a7 = a6--  // 2
 
+// console.log("a5 ", a5); // 2       // 2
+// console.log("a6 ", a6); // 1  2    // 1
+// console.log("a7 ", a7); // 1       // 2
 
-// 2. non primitive dataTypes
+// // 2. Assignment operator
 
+// let num = 100
 
-// Array
+// let AdditionVal = 20
 
-// syntex - []
+//     // num = num + AdditionVal
 
-let fruit = ["apple","orange","banana","cherry","giwi","pineApple","jack fruit"]
+//     num *= AdditionVal
 
-console.log(fruit);
+//     console.log(num);
 
-console.log(fruit[0]);
-console.log(fruit[1]);
-console.log(fruit[2]);
-console.log(fruit[3]);
+// console.clear();
 
+// // 3. Relational operator
 
-console.log(fruit[fruit.length-1]);
-console.log(fruit[fruit.length-2]);
+// // meaning          syntex        example       result
 
+// // greaterThen         >            5>2         true
 
+// // lessThen            <            5<2         false
 
-// Object 
+// // greaterThenEq       >=           5>=5        true
 
-// syntex :- {}
+// // lessThenEq          <=           5<=7        true
 
+// // loosyTypeEq         ==           5=="5"      true
 
-fruit = ["apple","orange","banana","cherry","giwi","pineApple","jack fruit"]
+// // loosyNotEq          !=           5!="5"      false
 
-let obj = {
-    redFruit : ["apple","cherry"],
-    yellowFruit : ["banana","pineApple","jackFruit"],
-    orangeFruit :"orange"
+// // strictlyTypeEq      ===          5==="5"     false
+
+// // strictlyNotEq       !==          5!=="5"     true
+
+// // 1
+// console.log(10 > 5)    // true
+
+// // 2
+// console.log(15 < 8)    // false
+
+// // 3
+// console.log(20 >= 20)  // true
+
+// // 4
+// console.log(7 <= 3)    // false
+
+// // 5
+// console.log(12 == "12") // true
+
+// // 6
+// console.log(25 != "25") // false
+
+// // 7
+// console.log(30 === "30") // false   // 30 === "30" = false
+
+// // 8
+// console.log(18 !== "18") // true    // 18 !== "18" = true
+
+// // 9
+// console.log(50 >= 45)   // true
+
+// // 10
+// console.log(9 < 2)      // false
+
+// // 4. logical operator
+
+// // AND  - &&
+
+// // true && true && true = true
+
+// // false && true && true = false
+
+// // OR  - ||
+
+// // true || true || true = true
+
+// // true || false || false = true
+
+// // false || false || false = false
+
+// // NOT - !
+
+// // !true = false
+
+// // !false = true
+
+// console.clear();
+
+// // AND - &&
+
+// console.log(10 > 5 && 20 > 15)   // true && true = true
+
+// console.log(8 > 12 && 30 > 10)   // false && true = false
+
+// console.log(50 >= 50 && 25 < 40) // true && true = true
+
+// // OR - ||
+
+// console.log(10 > 20 || 15 > 5) // false || true = true
+
+// console.log(7 < 3 || 9 < 2)    // false || false = false
+
+// console.log(100 === 100 || 50 < 10) // true || false = true
+
+// // NOT - !
+
+// console.log(!(10 > 5))   // false  // !(true) = false
+
+// console.log(!(20 < 10))  // true   // !(false) = true
+
+// console.log(!(50 === "50")) // true // !(false) = true
+
+// console.log(!(15 !== "15")) // false // !(true) = false
+
+// // 5. ternary operator
+
+// // condition ? statement : statement ;
+
+// // 5===5  ? alert("condition true") : alert("condition false")
+
+// concatination - (+)
+
+let one = "iron";
+let two = "man";
+
+console.log(one + " " + two);
+
+// Template litral or string
+
+let a1 = "spider";
+let a2 = "man";
+
+console.log(`${a1} ${a2}`);
+
+// Type casting
+
+// 1. implicit TC
+
+// string - string anything is string
+
+console.log(typeof ("hello" + "hi"));
+console.log(typeof ("hello" + 1));
+console.log(typeof ("hello" + true));
+console.log(typeof ("hello" + undefined));
+console.log(typeof ("hello" + null));
+
+console.log(typeof ("hello" + [1, 2, 3]));
+console.log(typeof ("hello" + { l: 1 }));
+
+// number
+
+console.log(typeof (1 + "hi"));
+console.log(typeof (1 + 1));
+console.log(typeof (1 + true));
+console.log(typeof (1 + undefined));
+console.log(typeof (1 + null));
+
+console.log(typeof (1 + [1, 2, 3]));
+console.log(typeof (1 + { k: 4 }));
+
+// boolean
+
+console.log(typeof (true + "hello"));
+console.log(typeof (true + 1));
+console.log(typeof (true + true));
+console.log(typeof (true + undefined));
+console.log(typeof (true + null));
+
+console.log(typeof (true + [1, 2]));
+console.log(typeof (true + { r: 4 }));
+
+console.clear();
+
+// 2. explicit TC
+
+// constractor
+
+// number constractor - Number()
+
+console.log(Number("1") + 1);
+
+console.log(Number());
+console.log(Number(""));
+console.log(Number("123"));
+console.log(Number("abc"));
+console.log(Number(-1));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(undefined));
+console.log(Number(null));
+
+console.log(Number([1, 2]));
+console.log(Number({ l: 4 }));
+
+// boolean constractor - Boolean()
+
+console.log(Boolean());
+console.log(Boolean(""));
+console.log(Boolean("123"));
+console.log(Boolean("abc"));
+console.log(Boolean(-1));
+console.log(Boolean(0));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+
+console.log(Boolean([1, 2]));
+console.log(Boolean({ l: 1 }));
+
+console.log(Boolean("0"));
+
+console.log(Boolean("h"));
+
+console.clear();
+
+// Flow Control Statement
+
+//  1. conditional statement
+
+// 1.  if statement
+
+// if(condition){statement}
+
+// condition true = true , false = not allow
+
+console.log("hi");
+
+if (" ") {
+  console.log("hello everyone");
+}
+
+console.log("hello");
+
+// 2. if else statement
+
+// syntex : -
+
+// if(condition){
+//     statement
+// }else{
+//     statement
+// }
+
+// flow :-
+
+// if condition = true { allow } , condition = false = else { allow }
+
+// example
+
+if (0) {
+  console.log("i gave the condition true");
+} else {
+  console.log("i gave the condition false");
+}
+
+// else if statement
+
+// session finder
+
+// let hour = prompt("tell now time hour");
+
+// if (hour >= 1 && hour <= 6) {
+//   alert("Early morning");
+// } else if (hour >= 7 && hour <= 12) {
+//   alert("good morning");
+// } else if (hour >= 13 && hour <= 15) {
+//   alert("Good Afternoon");
+// } else if (hour >= 16 && hour <= 18) {
+//   alert("Good Evening");
+// } else if (hour >= 19 && hour <= 24) {
+//   alert("Good Night");
+// } else {
+//   alert("time is invalid");
+// }
+
+// nested if Statement
+
+// let age = prompt("enter your age");
+// let height = prompt("enter your height cm");
+// let weight = prompt("enter your weight kg");
+
+// if (age >= 18) {
+//   if (height >= 160) {
+//     if (weight >= 60) {
+//       alert("your are eligible");
+//     } else {
+//       alert("your weight is not eligible");
+//     }
+//   } else {
+//     alert("your height is not eligible");
+//   }
+// } else {
+//   alert("your age is not eligible");
+// }
+
+// 5. switch statement
+
+// switch(condition){
+
+//     case value : statement ; break;
+//     case value : statement ; break;
+//     case value : statement ; break;
+//     case value : statement ; break;
+
+// }
+
+let trafficLight = "";
+
+switch (trafficLight) {
+  case "red":
+    console.log("vechile stop");
+    break;
+  case "yellow":
+    console.log("vechile start");
+    break;
+  case "green":
+    console.log("vechile go..");
+    break;
+  default:
+    console.log("have a good day");
+
+    break;
+}
+
+// else if
+
+// let subject = prompt("enter your exam mark in 50");
+
+// if (subject >= 40) {
+//   console.log("very good");
+// } else if (subject >= 30) {
+//   console.log("good");
+// } else if (subject >= 20) {
+//   console.log("average");
+// } else if (subject >= 10) {
+//   console.log("poor");
+// } else {
+//   console.log("fail");
+// }
+
+//  2. looping statement
+
+
+// for loop 
+
+// syntex :- 
+
+
+// for(intialiazation ; condition ; iteration ){
+//     statement 
+// }
+
+
+for(let a = 1 ; a <= 3 ; a++ ){
+    console.log(a); // 1 2 3
+    
 }
 
 
-console.log(obj);
-console.log(obj.redFruit[0]);
-console.log(obj.yellowFruit[2]);
-console.log(obj.orangeFruit);
+// let a = 1 ; 1 <= 3 = true ; 1++ = 2
 
-console.clear();
+// let a = 2 ; 2 <= 3 = true ; 2++ = 3
 
+// let a = 3 ; 3 <= 3 = true ; 3++ = 4
 
-// operator
-
-// 1. Arithmrtic operator.
-
-
-// Addition   +    
-
-console.log(5 +  6);
-
-
-// subraction +
-
-console.log( 5 - 3);
-
-// multiplication   *
-
-console.log(5*2);
-
-// division  - /
-
-console.log(5 / 2);
+// let a = 4 ; 4 <= 3 = false . 
 
 
 
-// modulus    %
 
-console.log(5 % 2);
+// while loop 
 
-// exponencial  **
+// intialization 
 
-console.log(4**4);//  -- 4^4 = 4*4*4*4
+// while(condition){
+//     statement
 
-
-// increament   ++  = +1
-
-// pre inc  = ++var
-
-// post inc = var++
+//     iteration 
+// }
 
 
-// decreament    --  = -1
+let val = 2
 
-// pre dec  = --var
+while(val>=0){
 
-// post dec = var--
-
-
-let a1 = 10
-
-a1--
-
-console.log(a1);
+    console.log("while loop :- ",val);
+    
+    val--
+  
+}
 
 
-// searching element first find in variable side, you can calculate that value side till the variable.
+// val = 2 , 2 >= 0 = true , log(2) , val-- = 2-- = 1
+// val = 1 , 1 >= 0 = true , log(1) , val-- = 1-- = 0
+// val = 0 , 0 >= 0 = true , log(0) , val-- = 0-- = -1
+// val = -1, -1>= 0 = false.
 
 
-let a2 = 2
+// do while loop 
 
-    a2 = ++a2
+// intialiazation 
 
-    console.log(a2);
+// do{
+//     statement
 
+//     iteration
+// }
 
-
-  // searching element first find in value side, you can calculate that value side entair the variable.  
-
-
-let a3 = 3
-
-let a4 = a3++ 
-
-console.log(a3 , a4); // 4 , 3
+// while(condition)
 
 
-// example :- 
+let val1 = 2
+
+do{
+    console.log("do : ",val1);
+
+    val1--
+    
+}
+
+while(val1>=0)
 
 
-let a5 = 1
 
-let a6 = ++a5  // ++1 = 2
+// for of loop - string , array , function
 
-let a7 = a6--  // 2
+let str1 = "javascript"
 
+// for(declration type variable){
 
-console.log("a5 ", a5); // 2       // 2
-console.log("a6 ", a6); // 1  2    // 1
-console.log("a7 ", a7); // 1       // 2
-
-
+//     console.log(var name);
     
 
-
-// 2. Assignment operator
-
-let num = 100
-
-let AdditionVal = 20
-
-    // num = num + AdditionVal
-
-    num *= AdditionVal
+// }
 
 
-    console.log(num);
+for(let a of str1){
+    console.log(a);
     
+}
 
-console.clear();
+let arr = ["apple","banana","orange","guava"]
 
+for(var b of arr){
+    console.log(b);
+    
+}
 
-// 3. Relational operator
 
-// meaning          syntex        example       result
+// for in loop - object 
 
-// greaterThen         >            5>2         true
+let emp = {
+    name1 : "john",
+    role  : "developer",
+    salary: 200000
+}
 
-// lessThen            <            5<2         false
+for(let c in emp){
+    console.log(c , emp[c]);
+    
+}
 
-// greaterThenEq       >=           5>=5        true
 
-// lessThenEq          <=           5<=7        true
 
-// loosyTypeEq         ==           5=="5"      true
 
-// loosyNotEq          !=           5!="5"      false
 
-// strictlyTypeEq      ===          5==="5"     false
+let c = 2
 
-// strictlyNotEq       !==          5!=="5"     true
+while(c>=10){
+    console.log(c);
 
+    c--
+    
+}
 
 
-// 1
-console.log(10 > 5)    // true 
+let d = 2
 
-// 2
-console.log(15 < 8)    // false
+do {
+    console.log(d);
 
-// 3
-console.log(20 >= 20)  // true
+    d--
+    
+}
 
-// 4
-console.log(7 <= 3)    // false
+while(d>=10) // false.
 
-// 5
-console.log(12 == "12") // true 
 
-// 6
-console.log(25 != "25") // false
 
-// 7
-console.log(30 === "30") // false   // 30 === "30" = false
 
-// 8
-console.log(18 !== "18") // true    // 18 !== "18" = true
 
-// 9
-console.log(50 >= 45)   // true
 
-// 10
-console.log(9 < 2)      // false
 
 
+// // Function
 
-
-
-// 4. logical operator
-
-// AND  - &&
-
-// true && true && true = true 
-
-// false && true && true = false 
-
-
-// OR  - ||
-
-
-// true || true || true = true 
-
-// true || false || false = true 
-
-// false || false || false = false
-
-
-
-// NOT - !
-
-
-// !true = false 
-
-// !false = true
-
-console.clear();
-
-
-// AND - &&
-
-console.log(10 > 5 && 20 > 15)   // true && true = true
-
-console.log(8 > 12 && 30 > 10)   // false && true = false
-
-console.log(50 >= 50 && 25 < 40) // true && true = true
-
-
-// OR - ||
-
-console.log(10 > 20 || 15 > 5) // false || true = true
-
-console.log(7 < 3 || 9 < 2)    // false || false = false
-
-console.log(100 === 100 || 50 < 10) // true || false = true
-
-
-// NOT - !
-
-console.log(!(10 > 5))   // false  // !(true) = false
-
-console.log(!(20 < 10))  // true   // !(false) = true
-
-console.log(!(50 === "50")) // true // !(false) = true
-
-console.log(!(15 !== "15")) // false // !(true) = false
-
-
-// 5. ternary operator
-
-
-// condition ? statement : statement ; 
-
-// 5===5  ? alert("condition true") : alert("condition false") 
-
-
-
-
-
-
-
-// Function 
-
-
-// Date
-
-
+// // Date
